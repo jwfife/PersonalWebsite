@@ -1,0 +1,119 @@
+html { 
+    overflow-y: scroll;
+    width: 100%;
+    height: 100%;
+}
+
+@font-face {
+    font-family: 'TrajanusBricks';
+    src: url(../fonts/TrajanusBriX-Invers.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Dreaming';
+    src: url(../fonts/Dreaming.otf) format('opentype');
+}
+
+body {
+    margin: auto;
+    padding: 0 0 0 0;
+}
+
+.all-container {
+    width: 100%;
+    height: 100%;
+    background-image: url("../imgs/stock-background-small.png");
+    background-size: cover;
+    background-position-y: 48%;
+    background-repeat: no-repeat;
+}
+
+.empty-div {
+    height: 30px;
+}
+
+.titles{
+    padding: 15px 0 0 0;
+    color: blanchedalmond;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-family:'Dreaming', sans-serif;
+}
+
+.main-title, .sub-title {
+    text-shadow: 2px 2px 3px black;
+}
+
+.sub-title {
+    font-size: 28px;
+    font-style: italic;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.main-title{
+    font-family: 'TrajanusBricks', sans-serif;
+    font-size: 3vw;
+}
+
+.about-section, .portfolio-section, .contacts-section {
+    display: flex;
+    position: relative;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    border-radius: 105px;
+    width: 35%;
+    height: 150px;
+    margin: auto;
+    background-color: #ffffff;
+    background:rgba(255,255,255,0.4);
+}
+
+.about-me, .portfolio, .contacts {
+    display: flex;
+    position: relative;
+    margin: 35px;
+    font-family: 'Dreaming', sans-serif;
+    text-align: left;
+    color: black;
+    font-size: 55px;
+    text-decoration: underline;
+    padding-left: 50px;
+    padding-right: 30px;
+    float: left;
+}
+
+.about-paragraph {
+    margin: auto;
+    float: left;
+    text-align: center;
+    color: black;
+    font-size: 22px;
+    width: 450px;
+    height: 160px;
+    font-family: Cambria;
+}
+
+.information {
+    margin: 0;
+    height: 1000px;
+}
+
+.portfolio-list {
+    font-family: Cambria;
+    margin: 35px;
+    font-size: 26px;
+    color: black;
+}
+
+.portfolio-section {
+    margin-bottom: 35px;
+}
+
+.logos {
+    height: 100px;
+    margin: 15px;
+    padding-left: 30px;
+}
