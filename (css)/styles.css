@@ -18,13 +18,17 @@ body {
     padding: 0 0 0 0;
 }
 
-.all-container {
+.container {
     width: 100%;
     height: 100%;
     background-image: url("../imgs/stock-background-small.png");
     background-size: cover;
     background-position-y: 48%;
     background-repeat:repeat-y;
+    background-repeat:repeat-x;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 .empty-div {
@@ -58,7 +62,7 @@ body {
 }
 
 .about-section, .portfolio-section, .contacts-section {
-    display: flex;
+    flex-shrink: 1;
     position: relative;
     padding-top: 35rem;
     padding-bottom: 35rem;
@@ -115,4 +119,57 @@ body {
     height: 100rem;
     margin: 15rem;
     padding-left: 30rem;
+}
+
+@media screen and (max-width: 610px) {
+    
+    .main-title {
+        font-size: 45rem;
+    }
+    .sub-title {
+        font-size: 25rem;
+    }
+    .about-section, .portfolio-section, .contacts-section {
+        padding-top: 40rem;
+        width: 550rem;
+        height: 175rem;
+    }
+    .about-me, .portfolio, .contacts {
+        display: block;
+        margin-top: 0;
+        float: none;
+        text-align: center;
+        height: 1rem;
+        font-size: 35rem;
+        padding-top: 0;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .about-paragraph {
+        padding-top: 15rem;
+        float: none;
+        font-size: 22rem;
+        width: 400rem;
+    }
+    .portfolio-list {
+        padding-top: 15rem;
+        float: none;
+        font-size: 30rem;
+    }
+    #linkedin-icon {
+        padding-left: 130rem;
+    }
+
+    #linkedin-icon, #gmail-icon {
+        padding-top: 15rem;
+    }
+}
+
+@media screen and (max-height: 1046) {
+    .body {
+        min-height: 800px;
+        width: 1000px;
+        background-size: contain;
+        background-repeat: repeat-y;
+    }
 }
